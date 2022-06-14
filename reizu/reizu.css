@@ -289,7 +289,7 @@ input:checked+.sliderSml::before {
 	font-size: 18px !important;
 }
 
-.button.lgn .material-icons {
+.button.lgn .material-icons-outlined {
 	display: none;
 }
 
