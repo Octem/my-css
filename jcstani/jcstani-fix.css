@@ -96,5 +96,5 @@
 }
 
 .menBtnIcn {
-	display: none;
+	display: none !important;
 }
