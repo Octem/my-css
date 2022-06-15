@@ -1,0 +1,399 @@
+@font-face {
+	font-family: 'GameFont';
+	src:c url(https://fonts.gstatic.com/s/robotomono/v13/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4.woff2) format('woff2');
+}
+
+#endTimer {
+    color: rgb(126, 217, 240);
+    text-shadow: black;
+    font-style: normal;
+}
+
+#endTable {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+#leaderDisplay::before {
+    content: "Leaderboard";
+    display: flex;
+    font-size: 24px;
+    color: #000000;
+    border-bottom: 4px solid cyan;
+    border-image-slice: 1;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+}
+
+.weapKey {
+    display:none !important;
+}
+.weapIcon {
+    transform: translate(-50%,-50%);
+    position:fixed;
+    left:50%;
+    bottom: 0%;
+    opacity:0 !important;
+    transition-duration: .15s;
+}
+.weapIcon[style="opacity: 1;"] {
+    opacity:1 !important;
+    filter: drop-shadow(0px 0px 5px black);
+}
+.weapIcon[style="opacity: 1; margin-right: 25px;"] {
+    opacity:1 !important;
+    filter: drop-shadow(0px 0px 5px black);
+}
+.weapIcon[style="opacity: 0.7;"] {
+    transform:translate(-50%,-50%) translateY(100px);
+    filter: drop-shadow(0px 0px 5px black);
+}
+.weapIcon[style="opacity: 0.7; margin-right: 25px;"] {
+    transform:translate(-50%,-50%) translateY(100px);
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+#onetrust-consent-sdk {
+    display: none !important;
+} 
+
+#chatList {
+    user-select: text !important;
+}
+
+.menuItem {
+    color: #fff;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background: rgb(0 0 0 / 0%);
+    text-align: center;
+    cursor: pointer;
+}
+
+#customizeButton {
+    border-radius: 20px !important;
+}
+
+.button.small {
+    border-radius: 20px !important;
+}
+
+.imageButton,
+#aHolder,
+.endAHolder,
+#merchImg,
+#onetrust-consent-sdk,
+#braveWarning,
+#editorBtnM,
+#youNewDiv{
+    display: none !important;
+}
+
+.headerBar {
+    background: transparent !important;
+}
+
+#seasonLabel {
+    display: none !important;
+}
+
+#mainLogo {
+    display: none !important;
+}
+
+#aContainer, #rightABox {
+    display: none !important;
+}
+
+.menuClassPlayerName {
+    animation: rainbowT 1s infinite;
+}
+
+#mLevelCont {
+    color: rgb(255, 0, 0);
+    background-color: rgb(0 0 0 / 0%);
+}
+
+.hostMapBy, .hostMapYear, .hostMapVersion {
+    display: none;
+}
+
+.hostMapName {
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.voteHint {
+    color: #f00;
+    font-size: 15px;
+    margin-top: -6px;
+    border: 4px solid #ff7373;
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transition: all .08s;
+    transition: all .08s;
+    border-radius: 100px !important;
+}
+
+.classCard {
+    text-shadow: none;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    height: 228px;
+    line-height: 28px;
+    font-size: 0;
+    transition-duration: 0.25s;
+}
+
+.classCard:hover {
+    font-size: 28px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.classWeap {
+    font-size: 0;
+    height: 0;
+}
+
+.classImgC {
+    margin-top: 12px;
+    transition-duration: 0.25s;
+}
+
+.classCard:hover img {
+    opacity: unset;
+    transform: unset;
+}
+
+.headShotChatIcon,
+.fistChatIcon,
+.weaponChatIcon,
+.thrownChatIcon,
+.meleeChatIcon {
+	filter: brightness(10) drop-shadow(0px 0px 2px cyan);
+}
+
+#menuItemContainer {
+	background: rgba(0,0,0,0) !important
+}
+#hiddenClasses {
+    display:flex !important;
+    flex-direction:row;
+    position:fixed;
+    left:50%;
+    bottom:24%;
+    transform:translate(-50%);
+    margin-right:10px;
+}
+
+#menuClassPicker0[onclick="selectClass(0)"],#menuClassPicker1[onclick="selectClass(1)"],#menuClassPicker2[onclick="selectClass(2)"],#menuClassPicker3[onclick="selectClass(3)"],#menuClassPicker4[onclick="selectClass(4)"],#menuClassPicker5[onclick="selectClass(5)"],#menuClassPicker6[onclick="selectClass(6)"],#menuClassPicker7[onclick="selectClass(7)"],#menuClassPicker8[onclick="selectClass(8)"],#menuClassPicker9[onclick="selectClass(9)"],#menuClassPicker10[onclick="selectClass(10)"],#menuClassPicker11[onclick="selectClass(11)"],#menuClassPicker12[onclick="selectClass(12)"],#menuClassPicker13[onclick="selectClass(13)"],#menuClassPicker14[onclick="selectClass(14)"] {
+	display:block;
+	width:60px;
+	height:60px;
+	pointer-events:auto;
+	image-rendering:pixelated;
+	margin-right:10px;
+    filter:saturate(0);
+    transition:filter 0.5s;
+}
+
+#menuClassPicker0[onclick="selectClass(0)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_0.png?build=uLz7w);
+}
+
+#menuClassPicker1[onclick="selectClass(1)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_1.png?build=uLz7w);
+}
+
+#menuClassPicker2[onclick="selectClass(2)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_2.png?build=uLz7w);
+}
+
+#menuClassPicker3[onclick="selectClass(3)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_3.png?build=uLz7w);
+}
+
+#menuClassPicker4[onclick="selectClass(4)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_4.png?build=uLz7w);
+}
+
+#menuClassPicker5[onclick="selectClass(5)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_5.png?build=uLz7w);
+}
+
+#menuClassPicker6[onclick="selectClass(6)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_6.png?build=uLz7w);
+}
+
+#menuClassPicker7[onclick="selectClass(7)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_7.png?build=uLz7w);
+}
+
+#menuClassPicker8[onclick="selectClass(8)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_8.png?build=uLz7w);
+}
+
+#menuClassPicker9[onclick="selectClass(9)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_9.png?build=uLz7w);
+}
+
+#menuClassPicker10[onclick="selectClass(10)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_10.png?build=uLz7w);
+}
+
+#menuClassPicker11[onclick="selectClass(11)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_11.png?build=uLz7w);
+}
+
+#menuClassPicker12[onclick="selectClass(12)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_12.png?build=uLz7w);
+}
+
+#menuClassPicker13[onclick="selectClass(13)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_13.png?build=uLz7w);
+}
+
+#menuClassPicker14[onclick="selectClass(14)"] {
+    content:url(https://assets.krunker.io/textures/classes/icon_14.png?build=uLz7w);    
+}
+
+#menuClassPicker0[onclick="selectClass(0)"]:hover,#menuClassPicker1[onclick="selectClass(1)"]:hover,#menuClassPicker2[onclick="selectClass(2)"]:hover,#menuClassPicker3[onclick="selectClass(3)"]:hover,#menuClassPicker4[onclick="selectClass(4)"]:hover,#menuClassPicker5[onclick="selectClass(5)"]:hover,#menuClassPicker6[onclick="selectClass(6)"]:hover,#menuClassPicker7[onclick="selectClass(7)"]:hover,#menuClassPicker8[onclick="selectClass(8)"]:hover,#menuClassPicker9[onclick="selectClass(9)"]:hover,#menuClassPicker10[onclick="selectClass(10)"]:hover,#menuClassPicker11[onclick="selectClass(11)"]:hover,#menuClassPicker12[onclick="selectClass(12)"]:hover,#menuClassPicker13[onclick="selectClass(13)"]:hover,#menuClassPicker14[onclick="selectClass(14)"]:hover {
+    cursor:pointer;
+    filter:saturate(1) drop-shadow(0 0 20px var(--accent));
+    transition:filter 0.5s;
+}
+
+#faceItIconM {
+    background-color:black;
+    content: linear-gradient(transparent, transparent);
+    -webkit-mask-image: url(https://krunker.io/img/faceit_1.png);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+}
+#rankedSoonTm {
+    position: absolute;
+    top: -67px;
+    left: 6px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    width: auto;
+    background-color: rgba(0,0,0,.5);
+    color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+  animation: rainbowT 1s infinite;
+}
+  #instructionsUpdate {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    color: rgba(255,255,255,.8);
+    font-size: 32px;
+    background-color: #101010;
+    padding: 5px;
+    width: 600px;
+    border-radius: 20px;
+}   
+  .button {
+    position: relative;
+    display: inline-block;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    border: 4px solid #fff;
+    text-align: center;
+    color: #fff;
+    pointer-events: all;
+    cursor: pointer;
+    -webkit-transition: all .08s;
+    transition: all .08s;
+    height: 30px;
+    vertical-align: bottom;
+    font-size: 20px!important;
+    line-height: 35px;
+    background-color: rgba(0,0,0,.3);
+}
+#chatInput::placeholder{
+  color: transparent;
+}
+
+#chatInputHolder::before{
+  position: absolute;
+  color: #fff;
+  bottom: 17px;
+  left: 70px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+#chatHolder:focus-within #chatInputHolder::before{
+  opacity: 0;
+}  
+
+#policeButton {
+    margin-right: 10px;
+    margin-left: -80px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+.endCard {
+    padding: 10px;
+    background-color: rgba(0,0,0,.5);
+    border-collapse: collapse;
+    box-sizing: border-box;
+    text-align: left;
+    border-radius: 6px;
+    height: min-content;
+    display: inline-block;
+    vertical-align: top;
+    max-height: 100%;
+    min-width: 100%;
+}
+
+
+#ammoDisplay {
+    position: fixed;
+    background-color: transparent;
+    background-image: url(https://dummyimage.com/1x1/000000/#000.png);
+    transform: none;
+    width: 50px;
+    height: 4px;
+    top: calc(50% + 35px);
+    left: calc(50% - 25px);
+    padding: 0;
+    padding-top: 0;
+    padding-left: 0;
+    border-radius: 0;
+}
+ 
+#ammoVal {
+    position: fixed;
+    font-size: 48px;
+    right: 3%;
+    bottom: 5%;
+    color: var(--ammo-color);
+    font-family: hpammo;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 3px rgba(30, 30, 30, .5);
+}
+ 
+#ammoMax {
+    display: none;
+}
+ 
+#ammoIcon {
+    display: none;
+}
