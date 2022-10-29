@@ -189,13 +189,13 @@
 
 .leaderNameM { font-size: 0px; }
 .leaderNameM::before {
-    content: "divine";
+    content: "galactic";
     font-size: 18px;
 }
 
 #menuAccountUsername{ font-size: 0px; }
 #menuAccountUsername::before {
-    content: "divine";
+    content: "galactic";
     font-size: 16px;
 }
 
@@ -205,7 +205,7 @@
     font-size: 19px;
 }
 .endTableN[style="color:#fff"]{
-	content: 'divine';
+	content: 'galactic';
 }
 
 #leaderDisplay {
